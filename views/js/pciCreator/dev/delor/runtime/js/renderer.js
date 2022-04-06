@@ -4,7 +4,10 @@ Assets created by Wiquid.
 All assets are under Creative Commons licence -
 */
 
-define(['IMSGlobal/jquery_2_1_1', 'OAT/util/html'], function($, html) {
+define([
+    'taoQtiItem/portableLib/jquery_2_1_1',
+    'taoQtiItem/portableLib/OAT/util/html'
+], function ($, html) {
 
     "use strict";
 
@@ -30,7 +33,7 @@ define(['IMSGlobal/jquery_2_1_1', 'OAT/util/html'], function($, html) {
         $container.find(".zonesocle").append($('<img>', { src: assetManager.resolve('delor/runtime/img/orus.png') }).attr('class', 'draggable catgod'));
 
         // Create the water valve 
-        $container.find(".robi").append("<div class='modifeau'>Modifier le volume d'eau</div><br /><input type='range' class='vanne' step='5' min='0' ma='140'><div class='moins'>- Moins</div><div  class='plus' >Plus +</div>");
+        $container.find(".robi").append("<div class='modifeau'>Modifier le volume d'eau</div><div class='plus'>Plus +</div><input type='range' class='vanne' step='5' min='0' ma='140'><div class='moins'>- Moins</div>");
         var $vanne = $container.find(".vanne");
         // Tare button
         $container.find(".g5982").click(function(event) {
