@@ -127,6 +127,8 @@ Copyright DEPP © 2017 - Ministère de l'éducation nationale
     position: absolute;
     margin-top: 35px;
     margin-left: -22px;
+    display: flex;
+    flex-direction: column;    
 }
 
 .qti-customInteraction .delor .moins {
@@ -135,7 +137,7 @@ Copyright DEPP © 2017 - Ministère de l'éducation nationale
 }
 
 .qti-customInteraction .delor .plus {
-    margin-top: -344px;
+    margin-top: 5px;
     margin-left: -73px;
 }
 
@@ -184,6 +186,7 @@ Copyright DEPP © 2017 - Ministère de l'éducation nationale
     -webkit-appearance: none;
     margin: 10px 0;
     width: 100%;
+    height: 1.5rem;
 }
 
 .qti-customInteraction .delor input[type=range]:focus {
